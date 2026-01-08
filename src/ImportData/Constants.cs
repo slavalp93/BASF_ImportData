@@ -27,7 +27,7 @@ namespace ImportData
       public const string BusinessUnits = "НашиОрганизации";
       public const string Departments = "Подразделения";
       public const string Employees = "Сотрудники";
-      public const string Companies = "Контрагенты";
+      public const string Companies = "Sheet1";
       public const string Persons = "Персоны";
       public const string Contracts = "Договоры";
       public const string SupAgreements = "Доп.Соглашения";
