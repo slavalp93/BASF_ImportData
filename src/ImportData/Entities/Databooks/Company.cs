@@ -126,11 +126,14 @@ namespace ImportData
                         if (contact == null)                        
                             contact = BusinessLogic.CreateContact(session, company, contactFIO, exceptionList, logger);
 
+                        if (!string.IsNullOrEmpty(email) && contact.Email != email)
+                            contact.Email = email;
+
                         if (!string.IsNullOrEmpty(contactJobTittle) && contact.JobTitle != contactJobTittle)
-                        {
                             contact.JobTitle = contactJobTittle;
+
+                        if (contact.State.IsChanged || contact.State.IsInserted)
                             contact.Save();
-                        }
                     }
 
                     if (company.State.IsChanged || company.State.IsInserted)

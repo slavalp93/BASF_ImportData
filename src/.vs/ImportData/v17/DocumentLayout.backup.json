@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\RX_Dev\\ImportData\\rx-util-importdata-master\\src\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3138E2CC-20A6-49C2-9F12-E2EFAE2135F3}|ImportData\\ImportData.csproj|d:\\rx_dev\\importdata\\rx-util-importdata-master\\src\\importdata\\entities\\databooks\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3138E2CC-20A6-49C2-9F12-E2EFAE2135F3}|ImportData\\ImportData.csproj|solutionrelative:importdata\\entities\\databooks\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +14,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{ebe3f1d5-feac-4131-bf03-0e85ffb89a89}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Company.cs",
+              "DocumentMoniker": "D:\\RX_Dev\\ImportData\\rx-util-importdata-master\\src\\ImportData\\Entities\\Databooks\\Company.cs",
+              "RelativeDocumentMoniker": "ImportData\\Entities\\Databooks\\Company.cs",
+              "ToolTip": "D:\\RX_Dev\\ImportData\\rx-util-importdata-master\\src\\ImportData\\Entities\\Databooks\\Company.cs",
+              "RelativeToolTip": "ImportData\\Entities\\Databooks\\Company.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAUwIcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T16:43:27.834Z",
+              "EditorCaption": ""
             }
           ]
         }
