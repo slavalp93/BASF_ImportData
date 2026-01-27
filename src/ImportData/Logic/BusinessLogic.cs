@@ -13,6 +13,7 @@ using NLog;
 using System.IO;
 using Sungero.Core;
 using DocumentFormat.OpenXml.ExtendedProperties;
+using Sungero.Contracts.PublicFunctions;
 
 namespace ImportData
 {
@@ -743,6 +744,27 @@ namespace ImportData
             codeDepartment = codeDepartment.Trim();
 
             return codeDepartment.Length <= 10 ? string.Empty : Constants.Resources.IncorrecCodeDepartmentLength;
+        }
+
+        /// <summary>
+        /// Получение основания подписания.
+        /// </summary>
+        /// <param name="session">Текущая сессия.</param>
+        /// <param name="name">Наименование записи справочника.</param>
+        /// <param name="exceptionList">Список ошибок.</param>
+        /// <param name="logger">Логировщик.</param>
+        /// <returns>Банк.</returns>
+        public static litiko.ContractsM.IBasisOfSign GetBasis(Session session, string name, List<Structures.ExceptionsStruct> exceptionList, NLog.Logger logger)
+        {
+            var records = Enumerable.ToList(session.GetAll<litiko.ContractsM.IBasisOfSign>().Where(x => string.Equals(x.NameUa, name, StringComparison.OrdinalIgnoreCase)));
+            var record = (Enumerable.FirstOrDefault<litiko.ContractsM.IBasisOfSign>(records));
+            if (records.Count > 1)
+            {
+                var message = string.Format("Найдено несколько оснований с именем \"{0}\". Проверьте, что в выбрана верная запись.", name);
+                exceptionList.Add(new Structures.ExceptionsStruct { ErrorType = Constants.ErrorTypes.Warn, Message = message });
+                logger.Warn(message);
+            }
+            return record;
         }
         #endregion
     }

@@ -11,7 +11,7 @@ namespace ImportData
 {
     class Company : Entity
     {
-        public int PropertiesCount = 13;
+        public int PropertiesCount = 16;
         /// <summary>
         /// Получить наименование число запрашиваемых параметров.
         /// </summary>
@@ -48,6 +48,9 @@ namespace ImportData
                 //var bankMFO = this.Parameters[shift + 10].Trim();
                 var iban = this.Parameters[shift + 11].Trim();
                 var certificateVAT = this.Parameters[shift + 12].Trim();
+                var basis = this.Parameters[shift + 13].Trim();
+                var docNumber = this.Parameters[shift + 14].Trim();
+                var contactNameRP = this.Parameters[shift + 15].Trim();
 
                 if (string.IsNullOrEmpty(edrpou))
                 {
@@ -131,6 +134,21 @@ namespace ImportData
 
                         if (!string.IsNullOrEmpty(contactJobTittle) && contact.JobTitle != contactJobTittle)
                             contact.JobTitle = contactJobTittle;
+
+                        if (!string.IsNullOrEmpty(basis)) 
+                        {
+                            var basisRecord = BusinessLogic.GetBasis(session, basis, exceptionList, logger);
+                            if (basisRecord != null && contact.Basislitiko?.Id != basisRecord.Id)
+                            {
+                                contact.Basislitiko = basisRecord;
+                            }
+                        }
+
+                        if (!string.IsNullOrEmpty(docNumber) && contact.DocNumberlitiko != docNumber)
+                            contact.DocNumberlitiko = docNumber;
+
+                        if (!string.IsNullOrEmpty(contactNameRP) && contact.NameRPlitiko != contactNameRP)
+                            contact.NameRPlitiko = contactNameRP;
 
                         if (contact.State.IsChanged || contact.State.IsInserted)
                             contact.Save();

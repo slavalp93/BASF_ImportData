@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{3138E2CC-20A6-49C2-9F12-E2EFAE2135F3}|ImportData\\ImportData.csproj|d:\\rx_dev\\importdata\\rx-util-importdata-master\\src\\importdata\\entities\\databooks\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3138E2CC-20A6-49C2-9F12-E2EFAE2135F3}|ImportData\\ImportData.csproj|solutionrelative:importdata\\entities\\databooks\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3138E2CC-20A6-49C2-9F12-E2EFAE2135F3}|ImportData\\ImportData.csproj|d:\\rx_dev\\importdata\\rx-util-importdata-master\\src\\importdata\\logic\\businesslogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3138E2CC-20A6-49C2-9F12-E2EFAE2135F3}|ImportData\\ImportData.csproj|solutionrelative:importdata\\logic\\businesslogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +18,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BusinessLogic.cs",
+              "DocumentMoniker": "D:\\RX_Dev\\ImportData\\rx-util-importdata-master\\src\\ImportData\\Logic\\BusinessLogic.cs",
+              "RelativeDocumentMoniker": "ImportData\\Logic\\BusinessLogic.cs",
+              "ToolTip": "D:\\RX_Dev\\ImportData\\rx-util-importdata-master\\src\\ImportData\\Logic\\BusinessLogic.cs",
+              "RelativeToolTip": "ImportData\\Logic\\BusinessLogic.cs",
+              "ViewState": "AgIAAOQCAAAAAAAAAAArwP0CAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T11:02:11.357Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{ebe3f1d5-feac-4131-bf03-0e85ffb89a89}"
@@ -28,7 +45,7 @@
               "RelativeDocumentMoniker": "ImportData\\Entities\\Databooks\\Company.cs",
               "ToolTip": "D:\\RX_Dev\\ImportData\\rx-util-importdata-master\\src\\ImportData\\Entities\\Databooks\\Company.cs",
               "RelativeToolTip": "ImportData\\Entities\\Databooks\\Company.cs",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAUwIEAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAHsAAAAAAAAAAADgv4gAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-22T16:43:27.834Z",
               "EditorCaption": ""
